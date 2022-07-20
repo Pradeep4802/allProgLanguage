@@ -10,7 +10,7 @@ public class serch_array_program {
             if (a1[i] == data)
                 break;
         }
-        return i+1;
+        return i + 1;
     }
 
     public static void main(String args[]) {
