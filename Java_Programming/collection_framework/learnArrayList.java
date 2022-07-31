@@ -5,11 +5,11 @@ import java.util.LinkedList;
 
 public class learnArrayList {
     public static void main(String[] args) {
-        List<Integer> list = new LinkedList<>();
-        list.add(1);
-        list.add(2);
-        list.add(3);
-        System.out.println(list);
+        // List<Integer> list = new LinkedList<>();
+        // list.add(1);
+        // list.add(2);
+        // list.add(3);
+        // System.out.println(list);
 
         // list.add(4);
         // System.out.println(list);
@@ -17,12 +17,12 @@ public class learnArrayList {
         // list.add(1,50);
         // System.out.println(list);
 
-        // List<Integer> newList = new ArrayList(); // Creating a new List
-        // newList.add(150);
-        // newList.add(160);
+        List<Integer> newList = new ArrayList(); // Creating a new List
+        newList.add(150);
+        newList.add(160);
 
         // list.addAll(newList); // This will add all the element
-        // System.out.println(list);
+        System.out.println(newList);
 
         // System.out.println(list.get(1));
 
