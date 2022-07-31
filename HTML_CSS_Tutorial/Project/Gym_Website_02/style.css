@@ -3,11 +3,21 @@
     padding: 0;
 } */
 
+body {
+    color: white;
+    background-image: url('gym1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-origin: content-box; */
+    background-attachment: scroll;
+    /* background-position: center top; */
+}
+
 header {
-    background-color:rgb(233, 79, 225);
-    position:relative;
+    /* background-color:rgb(233, 79, 225); */
+    position: relative;
     height: 83px;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     border-radius: 81px;
 }
 
@@ -18,16 +28,17 @@ header {
 
 .left img {
     position: relative;
-    width: 54px;
+    width: 95px;
     margin: 16px 121px;
+    filter: invert(100%);
 }
 
 .mid {
     /* display: block; */
-    /* position: relative; */
+    position: relative;
     margin: 0 265px;
     width: 40%;
-    /* top: 20px; */
+    top: 25px;
 }
 
 .navbar {
@@ -45,47 +56,94 @@ header {
 }
 
 .navbar li a {
-    color: black;
+    color: rgb(228, 231, 49);
     text-decoration: none;
-    font-size: 26px;
+    font-size: 35px;
     font-weight: bold;
     font-style: italic;
     font-family: cursive;
     list-style: none;
 }
 
-
 .navbar li a:hover,
 .navbar li a.active {
     /* background-color: rgb(233, 79, 225); */
     /* border: 1px solid blue; */
     /* color: green; */
+    /* font-size: 10px; */
     color: #8fdbb1;
-    border-radius:10px;
+    border-radius: 10px;
     text-decoration: underline;
-    text-decoration-color: black;
+    text-decoration-color: rgb(208, 39, 214);
 }
 
 .right {
     position: absolute;
     right: 200px;
-    top: 55px;
+    top: 35px;
     display: inline-block;
     /* border: 2px solid black; */
 }
+
 .btn {
-    color: white;
-    background-color: black;
+    color: black;
+    background-color: rgb(248, 239, 239);
     border: 2px solid black;
     border-radius: 10px;
-    font-size: 18px;
+    font-size: 25px;
     font-weight: bold;
     font-style: italic;
-    font-family:'Times New Roman', Times, serif;
+    font-family: 'Times New Roman', Times, serif;
     cursor: pointer;
+    padding: 12px 32px;
 }
 
 .btn:hover {
     color: black;
     background-color: khaki;
+}
+
+section {
+    display: inline;
+    position: absolute;
+    /* border: 2px solid green; */
+    /* left: 84px; */
+    top: 200px;
+    width: 33%;
+    right: 50px;
+}
+
+form {
+    position: relative;
+    left: 10px;
+}
+
+.form-group {
+    margin: 20px auto;
+}
+
+.form-group input {
+    display: block;
+    /* position: relative; */
+    text-align: center;
+    width: 333px;
+    /* left: 50px; */
+    padding: 10px 129px;
+    border: 2px solid rgb(241, 238, 40);
+    border-radius: 10px;
+    font-size: 20px;
+    font-family: 'Mouse Memoirs', sans-serif;
+    /* font-weight: bold; */
+}
+
+section h1 {
+    text-align: center;
+}
+
+.btn_submit {
+    /* position: relative; */
+    /* left: 10px; */
+    padding: 10px 270px;
+    font-family: 'Mouse Memoirs', sans-serif;
+    font-size: 25px;
 }
