@@ -1,0 +1,20 @@
+<?xml version="1.0" standalone="yes"?>
+<?xml-stylesheet type="text/css" href="format.css"?>
+<document>
+  <title>The Jungle Book</title>
+  <author>By pradeep</author>
+  <section>Mowglio nuihgjt publication</section>
+  <p class="green">
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem veniam dolore consequuntur odit atque laudantium accusamus aspernatur unde distinctio assumenda.
+  </p>
+  <p>
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut voluptatem laudantium voluptate culpa autem numquam, adipisci amet accusamus soluta eum?
+  </p>
+  <p class="green">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quibusdam illum et, corrupti exercitationem quo ea consequuntur animi nemo earum quia beatae tenetur odit sequi quis qui rem autem praesentium!
+  </p>
+  <p style="text-decoration: underline">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam blanditiis accusantium dolore sint eligendi aliquam nesciunt doloremque, quae natus sed corporis soluta odio architecto maiores iusto reprehenderit consectetur magnam aliquid!
+  </p>
+  <name>Pradeepkumar Pal</name>
+</document>
