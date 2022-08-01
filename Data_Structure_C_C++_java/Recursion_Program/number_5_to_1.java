@@ -12,4 +12,3 @@ public class number_5_to_1 {
         printNumb(n); // n=5
     }
 }
-.
