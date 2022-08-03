@@ -50,7 +50,7 @@ header {
 .navbar li {
     /* border: 2px solid red; */
     position: relative;
-    margin: 10px 40px;
+    margin: 10px 27px;
     padding: 0px 8px;
     list-style: none;
 }
@@ -99,7 +99,7 @@ header {
 }
 
 .btn:hover {
-    color: black;
+    color: rgb(238, 17, 28);
     background-color: khaki;
 }
 
