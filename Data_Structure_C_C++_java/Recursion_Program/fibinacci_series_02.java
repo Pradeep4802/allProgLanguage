@@ -7,6 +7,6 @@ public class fibinacci_series_02 {
         return last + slast;
     }
     public static void main(String[] args) {
-        System.out.println(f(10));
+        System.out.println(f(8));
     }
 }
