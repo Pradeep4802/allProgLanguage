@@ -1,5 +1,6 @@
 import logo from "./logo.svg";
 import "./App.css";
+import React from 'react';
 // import ExpenseItem from "./components/ExpenseItem";
 import Expenses from "./components/Expenses";
 
@@ -7,7 +8,7 @@ function App() {
   // const para = document.createElement('p');
   // para.textContent = 'This is also visible';
   // document.getElementById('root').append(para);
-
+  
   const expenses = [
     {
       id: "e1",
@@ -34,26 +35,20 @@ function App() {
       date: new Date(2021, 5, 12),
     },
   ];
-  return (
-    <div className="App">
-      {/* <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header> */}
-      <h2>Let's get started!</h2>
-      <Expenses items={expenses}></Expenses>
-    </div>
-  );
+  
+  return React.createElement (
+    'div',
+    {},
+    React.createElement ('h2', {}, "Let's get started!"),
+    React.createElement (Expenses, {items: expenses})
+    );
+    // return (
+      //   <div>
+      //     <h2>Let's get started!</h2>
+  //     <Expenses items={expenses}></Expenses>
+  //   </div> 
+  //   );
+  // }
+  
 }
-
 export default App;
