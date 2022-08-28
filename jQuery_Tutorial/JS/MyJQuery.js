@@ -26,7 +26,7 @@ $(document).ready(function () {
     // $('#odd').click();
     
     // Other selectors
-    $('*').click() // clicks on all the elements
+    // $('*').click() // clicks on all the elements
     // $("p.odd").click(); // clicks on all the elements
     // $("p:first").click(); // clicks on all the elements
 });
