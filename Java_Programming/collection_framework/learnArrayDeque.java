@@ -12,7 +12,7 @@ public class learnArrayDeque {
         adq.offer(26);
 
         System.out.println(adq);
-        
+         
         System.out.println(adq.peek());
         System.out.println(adq.peekFirst());
         System.out.println(adq.peekLast());

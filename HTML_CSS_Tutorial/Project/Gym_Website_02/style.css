@@ -65,14 +65,14 @@ header {
     list-style: none;
 }
 
-.navbar li a:hover,
-.navbar li a.active {
+.navbar li a:hover{
     /* background-color: rgb(233, 79, 225); */
     /* border: 1px solid blue; */
     /* color: green; */
     /* font-size: 10px; */
     color: #8fdbb1;
-    border-radius: 10px;
+    /* border: 2px solid red;  */
+    /* border-radius: 10px; */
     text-decoration: underline;
     text-decoration-color: rgb(208, 39, 214);
 }
@@ -99,8 +99,9 @@ header {
 }
 
 .btn:hover {
-    color: rgb(238, 17, 28);
-    background-color: khaki;
+    color: rgb(235, 227, 227);
+    background-color: rgb(12, 12, 11);
+    border: 2px solid white;
 }
 
 section {
