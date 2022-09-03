@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Bitter:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bitter:wght@300&family=Signika+Negative:wght@600&display=swap");
+
+body {
+  background-color: rgb(113, 113, 238);
+}
+.navbar img {
+  position: relative;
+  top: 10px;
+  left: 90px;
+  height: 65px;
+  /* border: 2px solid black; */
+  filter: invert(100%);
+}
+
+.navbar h3 {
+  display: inline;
+  position: absolute;
+  left: 86px;
+  top: 73px;
+  color: rgb(248, 241, 248);
+  font-size: 20px;
+}
+
+nav ul {
+  display: flex;
+  position: absolute;
+  left: 400px;
+  top: 10px;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 40px;
+  /* border: 2px solid red; */
+  /* text-decoration: none; */
+}
+
+.box {
+  list-style: none;
+  margin: 15px 60px;
+  font-size: 30px;
+}
+
+.box a {
+  text-decoration: none;
+  color: rgb(246, 244, 247);
+  padding: 7px 25px;
+}
+
+.box a:hover {
+  border: 2px solid black;
+  border-radius: 25px;
+  background-color: black;
+  color: white;
+}
+
+.mid {
+  display: flex;
+  /* border: 2px solid red; */
+}
+
+.bio {
+  /* border: 2px solid rgb(190, 228, 21); */
+  position: relative;
+  top: 230px;
+  left: 80px;
+  height: 330px;
+}
+
+.bio h2 {
+  text-align: center;
+  font-size: 70px;
+  font-family: "Signika Negative", sans-serif;
+  color: rgb(247, 243, 247);
+}
+
+.bio p {
+  font-family: "Bitter", serif;
+  font-size: 25px;
+  text-align: center;
+  color: rgb(246, 244, 247);
+}
+
+.image {
+  /* border: 2px solid blue; */
+  position: relative;
+  top: 50px;
+  left: 422px;
+}
+
+.image img {
+  height: 660px;
+}
+
+.logo {
+  position: relative;
+  top: 130px;
+  /* left: 135px; */
+  /* border: 2px solid red; */
+  display: flex;
+  height: 50px;
+  justify-content: space-evenly;
+}
+
+#apple {
+  position: relative;
+  right: 250px;
+}
+
+#Microsoft {
+  position: relative;
+  right: 440px;
+}
+
+#facebook {
+  position: relative;
+  right: 610px;
+}
+
+#google {
+  position: relative;
+  right: 780px;
+}
+
+#oracle {
+  position: relative;
+  right: 950px;
+}

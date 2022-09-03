@@ -3,9 +3,10 @@ let impArray = ['adrak','pyaz','bhindi'];
 
 
 //Add a key-value pair inside local storage
-// localStorage.setItem('Name', 'Harry');
-// localStorage.setItem('Name2', 'Rohan');
-// localStorage.setItem('Sabji', JSON.stringify(impArray));
+localStorage.setItem('Name', 'Harry');
+localStorage.setItem('Name2', 'Rohan');
+localStorage.setItem('Sabji', JSON.stringify(impArray));
+// localStorage.setItem('Sabji', impArray);
 
 // clears ths entire kocal storage
 // localStorage.clear();

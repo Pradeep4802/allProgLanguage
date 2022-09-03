@@ -221,7 +221,7 @@ let form = document.querySelector('form');
 let select = document.querySelector('select');
 
 // itemInput.addEventListener('keydown', runEvent);
-// itemInput.addEventListener('keyup', runEvent);
+// itemInput.addEventListener('keyup', runEvent); 
 // itemInput.addEventListener('keypress', runEvent);
 
 
