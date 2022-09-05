@@ -86,7 +86,9 @@
 }
 
 .btn-sm {
-  font-size: 17px;
+  font-size: 10px;
+  padding: 7px 13px;
+  margin: 10px 0;
 }
 
 .btn:hover {
@@ -137,4 +139,18 @@
 #form-check input {
   width: 24px;
   margin: 3px 0;
+}
+
+.blogItem {
+  margin: 20px;
+  font-family: "Fira Sans", sans-serif;
+}
+
+.blogContainer h1 {
+  font-family: "Fira Sans", sans-serif;
+  margin: 23px;
+}
+
+.blogItem p {
+  font-family: "Source Code Pro", monospace;
 }
