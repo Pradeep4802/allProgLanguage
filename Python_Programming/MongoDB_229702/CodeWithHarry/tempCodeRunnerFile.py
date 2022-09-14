@@ -1,0 +1,1 @@
+l.list_collection_names())
