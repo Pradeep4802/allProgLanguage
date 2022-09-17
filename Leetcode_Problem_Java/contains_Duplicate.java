@@ -8,8 +8,7 @@ class contains_Duplicate {
             if (numbers.contains(nums[i])) return true;
             numbers.add(nums[i]);   
         }
-<<<<<<< HEAD
-        return false;       // Time Complexity: O(n)
+        return false;       // Time Complexity: O(n) , Topic: Array,HashSet,Sorting
     }
 
     public static void main(String[] args) {
@@ -17,13 +16,5 @@ class contains_Duplicate {
         boolean b1;
         b1 = containsDuplicate(arr);
         System.out.println(b1);
-=======
-        return false;
-    }
-
-    public static void main(String[] args) {
-        int [] arr = {1,2,3,4};
-        System.out.println(containsDuplicate(arr));
->>>>>>> e8976bcf4e20ba784d902e9fc764179ebef3fda8
     }
 }
