@@ -1,6 +1,7 @@
-import logo from "./logo.svg";
+// import logo from "./logo.svg";
 import "./App.css";
 import React from 'react';
+import NewExpense from "./components/NewExpense/NewExpense";
 // import ExpenseItem from "./components/ExpenseItem";
 import Expenses from "./components/Expenses";
 
@@ -36,12 +37,12 @@ function App() {
     },
   ];
   
-  return React.createElement (
-    'div',
-    {},
-    React.createElement ('h2', {}, "Let's get started!"),
-    React.createElement (Expenses, {items: expenses})
-    );
+  // return React.createElement (
+    // 'div',
+    // {},
+    // React.createElement ('h2', {}, "Let's get started!"),
+    // React.createElement (Expenses, {items: expenses})
+    // );
     // return (
       //   <div>
       //     <h2>Let's get started!</h2>
@@ -49,6 +50,13 @@ function App() {
   //   </div> 
   //   );
   // }
-  
+  // ) 
+
+  return (
+    <div>
+      <NewExpense />
+      <Expenses items={expenses} />
+    </div>
+  );
 }
 export default App;
