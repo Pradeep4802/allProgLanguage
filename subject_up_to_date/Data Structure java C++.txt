@@ -1,0 +1,5 @@
+Date: 27/09/22
+1) Number of Occurence (Java)
+2) Find first and last position of elements in sorted array (c++ and Java)
+
+Date: 28/09/22
