@@ -1,1 +1,4 @@
 Date: 28/09/22
+	1) Data Structure:- Median of two sorted array.
+	2) ADO.Net connection in asp.net
+	3) linux command

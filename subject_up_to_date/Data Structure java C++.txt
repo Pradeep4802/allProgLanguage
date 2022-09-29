@@ -3,3 +3,4 @@ Date: 27/09/22
 2) Find first and last position of elements in sorted array (c++ and Java)
 
 Date: 28/09/22
+1) Median of two sorted array (Java/C++).
