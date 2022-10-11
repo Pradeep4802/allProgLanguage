@@ -13,3 +13,9 @@
 
 4) React Application
     A) state and events
+
+Date: 29/09/22
+	1) React: section 4 : state and working with events
+
+Date: 30/09/22
+	1)

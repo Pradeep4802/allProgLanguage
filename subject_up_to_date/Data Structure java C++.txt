@@ -4,3 +4,9 @@ Date: 27/09/22
 
 Date: 28/09/22
 1) Median of two sorted array (Java/C++).
+
+Date: 29/09/22
+No question Solved
+
+Date: 30/09/22
+1) Conatiner with most water (Java/C++).

@@ -2,3 +2,10 @@ Date: 28/09/22
 	1) Data Structure:- Median of two sorted array.
 	2) ADO.Net connection in asp.net
 	3) linux command
+
+Date: 29/09/22
+	1) Networking section 7 : IP addressing
+	2) React: section 4 : state and working with events
+
+Date: 30/09/22
+	1)Data structure:- Container with most water
