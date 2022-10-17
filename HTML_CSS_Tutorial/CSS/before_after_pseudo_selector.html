@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Varela+Round&display=swap");
+    </style>
+    <title>Before and After pseudo selector</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: black;
+        color: white;
+      }
+
+      header::before {
+        background: url("https://images.unsplash.com/photo-1579902185821-3d401cb1b3e9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXRodW1ibmFpbHx8OTU2NDg2M3x8ZW58MHx8fHw%3D&dpr=1&auto=format&fit=crop&w=294&q=60")  no-repeat center center/cover;
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        opacity: 0.3;
+      }
+
+      .navigation {
+        font-family: "Bree Serif", serif;
+        font-size: 20px;
+        display: flex;
+      }
+
+      li {
+        list-style: none;
+        padding: 20px 23px;
+      }
+
+      section {
+        height: 344px;
+        /* border: 2px solid red; */
+        margin: 3px 23px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      h1 {
+        font-size: 4rem;
+        font-family: "Bree Serif", serif;
+      }
+
+      p {
+        text-align: center;
+      }
+
+      /* section::after{
+        content: "this is a content"
+
+      } */
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <ul class="navigation">
+          <li class="item">Home</li>
+          <li class="item">About</li>
+          <li class="item">Services</li>
+          <li class="item">Contact Us</li>
+        </ul>
+      </nav>
+    </header>
+    <section>
+      <h1>Welcome to coding world</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
+        distinctio amet nam aut consectetur iure iste magni? In quibusdam
+        nostrum facilis commodi ducimus facere, aliquam delectus nulla sunt illo
+        repellat veritatis. Lorem ipsum dolor sit amet consectetur adipisicing
+        elit. Ipsa, nemo!
+      </p>
+    </section>
+    <hr />
+  </body>
+</html>
