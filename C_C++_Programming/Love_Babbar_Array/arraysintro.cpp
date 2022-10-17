@@ -2,8 +2,16 @@
 using namespace std;
 
 // HOLD
-void printArray()
+void printArray(int arr[], int size)
 {
+    cout << endl
+         << " printing the array " << endl;
+    // print the array
+    for (int i = 0; i < size; i++)
+    {
+        cout << arr[i] << " ";
+    }
+    cout << "Printing is DONE";
 }
 
 int main()
@@ -25,41 +33,43 @@ int main()
     int third[15] = {2, 7};
 
     int n = 15;
-    cout << " printing the array " << endl;
 
     // print the array
-    for (int i = 0; i < n; i++)
-    {
-        cout << third[i] << " ";
-    }
+    printArray(third, n);
 
     // initialising all locations with 0
 
     int fourth[10] = {0};
     n = 10;
-    cout << endl
-         << " printing the array " << endl;
-    // print the array
-    for (int i = 0; i < n; i++)
-    {
-        cout << fourth[i] << " ";
-    }
+    printArray(fourth, n);
 
     // initialising all locations with 1 [not possible with below line]
     int fifth[10] = {1};
 
     n = 10;
+    printArray(fifth, n);
+
+    int fifthSize = sizeof(fifth) / sizeof(int);
+    cout << endl
+         << "Size of Fifth is " << fifthSize << endl;
+
+    char ch[5] = {'a', 'b', 'c', 'r', 'p'};
+    cout << ch[3] << endl;
+
     cout << endl
          << " printing the array " << endl;
     // print the array
-    for (int i = 0; i < n; i++)
+    for (int i = 0; i < 5; i++)
     {
-        cout << fifth[i] << " ";
-        // fifth[i+1] = 1;
+        cout << ch[i] << " ";
     }
-
     cout << endl
-         << "Everything is Fine " << endl
-         << endl;
+         << "Printing is DONE";
+
+    double firstDouble[5];
+    float firstFloat[6];
+    bool firstBool[9];
+
+    cout << " Everything is fine ";
     return 0;
 }
