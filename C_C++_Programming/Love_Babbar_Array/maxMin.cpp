@@ -28,7 +28,7 @@ int findMin(int arr[], int size)
     }
     return min;
 }
-
+// Array
 int main()
 {
     int size;
