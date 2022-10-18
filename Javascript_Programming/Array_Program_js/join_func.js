@@ -11,3 +11,19 @@ let arrayJoin = (input,ch) => {
 let myColor = ["Red","Green","White","Black"];
 console.log(arrayJoin(myColor,','));
 console.log(arrayJoin(myColor,'+'));
+
+
+const elements = ['Fire', 'Air', 'Water'];
+
+console.log(elements.join());
+// expected output: "Fire,Air,Water"
+
+console.log(elements.join(''));
+// expected output: "FireAirWater"
+
+console.log(elements.join('-'));
+// expected output: "Fire-Air-Water"
+
+console.log([1, , 3].join()); // '1,,3'
+console.log([1, undefined, 3].join()); // '1,,3' 
+
