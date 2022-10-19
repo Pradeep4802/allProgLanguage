@@ -4,29 +4,32 @@
 
 #include <iostream>
 using namespace std;
-const int INT_MAX = 32766;
-const int INT_MIN = -32767;
+// const int INT_MAX = 32766;
+// const int INT_MIN = -32767;
 
+// const int min = INT16_MIN;
 int findMax(int arr[], int size)
 {
-    int max = INT_MAX;
+    int maxi = INT16_MIN;
     for (int i = 0; i < size; i++)
     {
-        if (max < arr[i])
-            max = arr[i];
+        maxi = max(maxi, arr[i]);
+        // if (max < arr[i])
+        //     max = arr[i];
     }
-    return max;
+    return maxi;
 }
 
 int findMin(int arr[], int size)
 {
-    int min = INT_MIN;
+    int mini = INT16_MAX;
     for (int i = 0; i < size; i++)
     {
-        if (min > arr[i])
-            min = arr[i];
+        mini = min(mini, arr[i]);
+        // if (min > arr[i])
+        //     min = arr[i];
     }
-    return min;
+    return mini;
 }
 
 int main()
@@ -42,8 +45,8 @@ int main()
     {
         cin >> arr[i];
     }
-    
-    cout << "Maximum Number is : " << findMax(arr,size) << endl
-         << "Minimum Number is : " << findMin(arr,size) << endl;
+
+    cout << "Maximum Number is : " << findMax(arr, size) << endl
+         << "Minimum Number is : " << findMin(arr, size) << endl;
     return 0;
 }
