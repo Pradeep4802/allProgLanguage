@@ -5,10 +5,11 @@ public class readKeyboard {
     public static void main(String arg[]) {
         Scanner sc = new Scanner(System.in);
         
-        float x = sc.nextFloat();
-        System.out.println();
+        sc.useRadix(2);
         
-        System.out.println(x);
+        int x = sc.nextInt();
+
+        System.out.println(x);;
         
         
     }
