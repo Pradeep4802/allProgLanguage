@@ -1,2 +1,4 @@
 1. What is a project? Explain how software projects are different from other projects.
-2. 
+2. What is project charter in software project management? What are the elements of project charter.
+3. Define Business case. Specify the content of business case document.
+4. Short note on stakeholders. Explain the acronym 'SMART'.
