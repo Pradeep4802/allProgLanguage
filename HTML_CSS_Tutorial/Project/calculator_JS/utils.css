@@ -11,5 +11,17 @@
 }
 
 .m-w-20 {
-    max-width: 30vw;
+    /* max-width: 30vw; */
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.items-center {
+    align-items: center;
 }
