@@ -1,9 +1,8 @@
-package mypack1.inner;
-
-public class Demo3
+package mypack1;
+public class Demo3 extends Demo1
 {
-	public void display() {
-		System.out.println("Welcome to Demo3");
+	public void show()
+	{
+		System.out.println(a+b+c+d);
 	}
 }
-  
