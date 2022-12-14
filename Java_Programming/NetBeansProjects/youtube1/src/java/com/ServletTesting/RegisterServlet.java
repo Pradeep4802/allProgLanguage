@@ -27,12 +27,24 @@ public class RegisterServlet extends HttpServlet {
                 out.println("<h2>Email : " + email + "</h2>");
                 out.println("<h2>Gender : " + gender + "</h2>");
                 out.println("<h2>Course : " + course + "</h2>");
-            //JDBC
+                //JDBC
+                
+                RequestDispatcher rd = request.getRequestDispatcher("success");
+                rd.forward(request,response);
+                
             } else {
                 out.println("<h2>You have not accepted terms and condition</h2>");
             }   
         } else {
             out.println("<h2>You have not accepted terms and condition</h2>");
+            // I want to include output of index.html
+            
+            // get the object of requestDispatcher
+            RequestDispatcher rd = request.getRequestDispatcher("index.html");
+            
+            // include() method
+            
+            rd.include(request, response);
         }
     }
 }
