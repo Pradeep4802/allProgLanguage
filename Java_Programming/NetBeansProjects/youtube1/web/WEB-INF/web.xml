@@ -21,6 +21,7 @@
         <servlet-class>com.ServletTesting.SuccessServlet</servlet-class>
     </servlet>
     
+    
     <servlet-mapping>
         <servlet-name>Register</servlet-name>
         <url-pattern>/RegisterServlet</url-pattern>
