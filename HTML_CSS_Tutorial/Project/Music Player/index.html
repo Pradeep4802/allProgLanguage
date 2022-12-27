@@ -23,17 +23,34 @@
             <h1>Kesariya</h1>
             <p>Singer : Arijit singh</p>
 
-            <audio controls>
+            <audio controls id="song">
                 <source src="media/kesariya.mp3" type="audio/mpeg">
             </audio>
             <input type="range" value="0" id="progress">
 
             <div class="controls">
                 <div><i class="fa-solid fa-backward"></i></div>
-                <div><i class="fa-solid fa-play"></i></div>
+                <div obclick="playpause"><i class="fa-solid fa-play" id="ctrlIcon"></i></div>
                 <div><i class="fa-solid fa-forward"></i></i></div>
             </div>
         </div>
     </div>
+
+    <script>
+
+        let progress = document.getElementById("progress");
+        let song = document.getElementById("song");
+        let ctrlIcon = document.getElementById("ctrlIcon");
+
+        song.onloadedmetadata = function() {
+            progress.max = song.duration;
+            progress.value = song.currentTime;
+        }
+
+        function playpause() {
+            
+        }
+
+    </script>
   </body>
 </html>
