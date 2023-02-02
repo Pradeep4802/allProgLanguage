@@ -45,7 +45,7 @@ class Subject {
     }
 }
 
-class Student {
+class Student extends Subject{
     private int rollno;
     private String name;
     private String dept;
@@ -70,8 +70,7 @@ class Student {
     }
 
     public Subject[] getSubjects() {
-        subjects = new String[3];
-
+        return subjects;
     }
 
     public void setSubjects(String sub1, String sub2, String sub3) {
