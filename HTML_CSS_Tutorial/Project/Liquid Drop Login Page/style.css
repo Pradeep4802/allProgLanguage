@@ -163,7 +163,7 @@ body {
 
 .btns::before {
     content: '';
-    position: absolute;
+    position: absolute; 
     top: 15px;
     left: 30px;
     width: 20px;
