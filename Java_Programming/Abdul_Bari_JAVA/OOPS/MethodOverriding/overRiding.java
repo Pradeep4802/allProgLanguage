@@ -37,6 +37,31 @@ class smartTV extends TV {
     }
 }
 
+class Car {
+    public void start() {
+        System.out.println("Car Started");
+    }
+
+    public void accelerate() {
+        System.out.println("Car is Accelerated");
+    }
+
+    public void changeGear() {
+        System.out.println("Car Gear Changed");
+    }
+}
+
+class luxuryCar extends Car {
+    @Override
+    public void changeGear() {
+        System.out.println("Automatic Gear");
+    }
+
+    public void openRoof() {
+        System.out.println("Sun Roof is Opened");
+    }
+}
+
 public class overRiding {
     public static void main(String[] args) {
         // Super sup = new Sub();
@@ -50,8 +75,16 @@ public class overRiding {
         // t.switchON();
         // t.changeChannel();
 
-        TV t = new smartTV();
-        t.switchON();
-        t.changeChannel();
+        // TV t = new smartTV();
+        // t.switchON();
+        // t.changeChannel();
+
+        // luxuryCar c1 = new luxuryCar();
+        Car c1 = new luxuryCar(); // Reference of superclass and object of subclass
+        // Car c = new Car();
+        c1.start();
+        c1.accelerate();
+        c1.changeGear();
+        // c1.openRoof();  // It gives error bcoz we cannot call subclass method from superclass reference
     }
 }
