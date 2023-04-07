@@ -54,7 +54,7 @@ class Compute extends pair
     long n;  
     public Compute(long a[], long n)  
     {  
-        arr; 
+        a; 
         this.n = n;
     }
 

@@ -1,0 +1,82 @@
+.wrapper {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins" sans-serif;
+}
+
+.wrapper .card {
+  overflow: hidden;
+  border: 1rem solid rgb(233, 226, 226);
+  height: 23rem;
+  width: 23rem;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 28%;
+  left: 40%;
+  /* position: relative; */
+}
+
+.wrapper .card img {
+  position: relative;
+  width: 23rem;
+  height: 23rem;
+  z-index: -1;
+}
+
+.wrapper .card .content {
+  position: absolute;
+  top: -101%;
+  left: 0;
+  height: 70%;
+  width: 83%;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 2rem;
+  padding-top: 5rem;
+  transition: 0.8s;
+}
+
+.wrapper .card .content h3 {
+  position: relative;
+  top: -45px;
+  font-size: 2rem;
+  color: orange;
+}
+
+.wrapper .card .content p {
+  position: relative;
+  top: -45px;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.wrapper .card:hover .content {
+  top: 0;
+}
+
+.wrapper .card .content .btn {
+  font-size: 35px;
+  border-radius: 50%;
+  padding: 15px 1.3rem;
+  position: relative;
+  top: -50px;
+  border: 5px solid orange;
+  color: orange;
+  background: blue;
+}
+
+.wrapper .card .content .pause1 i {
+  position: relative;
+  left: 0px;
+}
+
+.wrapper .card .content .btn:hover {
+  color: blue;
+  background: orange;
+}
+
+.wrapper .card .content i {
+  position: relative;
+  left: 3px;
+}

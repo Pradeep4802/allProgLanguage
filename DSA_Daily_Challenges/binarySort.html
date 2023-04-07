@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //Function to sort the binary array.
+      function binSort(A, N) {
+        if (A.length < 2) {
+          return A;
+        }
+        //your code here
+        let l = 0,
+          h = 1;
+
+        while (h < N) {
+          if (A[l] === 0) {
+            l++;
+          }
+          if (A[l] === 1 && A[h] === 0) {
+            A[l] = 0;
+            A[h] = 1;
+            l++;  
+          }
+          h++;
+        }
+        return A;
+      }
+
+      let A = [1, 0, 1, 1, 0];
+      let n = A.length;
+      console.log(binSort(A, n));
+    </script>
+  </body>
+</html>

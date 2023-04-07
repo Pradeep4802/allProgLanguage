@@ -1,8 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Bitter:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bitter:wght@300&family=Signika+Negative:wght@600&display=swap");
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
 body {
-  background-color: rgb(113, 113, 238);
+  /* background-color: rgb(113, 113, 238); */
 }
 .navbar img {
   position: relative;
