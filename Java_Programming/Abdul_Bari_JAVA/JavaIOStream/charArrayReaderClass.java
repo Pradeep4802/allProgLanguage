@@ -20,6 +20,7 @@ public class charArrayReaderClass {
 
         char [] charResult = cw.toCharArray();
         String str = new String(charResult);
+        System.out.println("str: " + str );
         // cr.close();
         cw.close();
     }
