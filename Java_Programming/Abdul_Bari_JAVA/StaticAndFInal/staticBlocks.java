@@ -10,7 +10,7 @@ class Test {
 public class staticBlocks {
     public static void main(String[] args) {
         System.out.println("Main");
-        Test t = new Test(); 
+        Test t = new Test();   
     }
 
 }
