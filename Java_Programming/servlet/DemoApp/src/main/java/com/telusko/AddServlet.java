@@ -20,7 +20,7 @@ public class AddServlet extends HttpServlet{
 		
 		int k = i + j;
 		
-		Cookie cookie = new Cookie("k", k + " ");
+		Cookie cookie = new Cookie("k", k + "");
 		res.addCookie(cookie);
 		
 		// HttpSession interface working implementation
@@ -38,7 +38,7 @@ public class AddServlet extends HttpServlet{
 		
 //		req.setAttribute("k", k);
 		
-		res.sendRedirect("sq?k="+k);
+		res.sendRedirect("sq");
 		
 //		RequestDispatcher rd = req.getRequestDispatcher("/sq");
 //		rd.forward(req, res);
