@@ -1,5 +1,6 @@
 package com.telusko;
 
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -11,7 +12,7 @@ import java.lang.*;
 
 import java.io.*;
 
-@SuppressWarnings("serial")
+@WebServlet("/sq")
 public class SqServlet extends HttpServlet {
 	public void doGet(HttpServletRequest req, HttpServletResponse res) throws IOException {
 		int k = 0;

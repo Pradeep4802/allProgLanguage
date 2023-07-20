@@ -1,0 +1,13 @@
+<
+<html>
+	<head>
+		<titile>Servlet Cookies</titile>
+	</head>
+	<body>
+		<form action="servlet1" method="post">
+		Name:<input type="text" name="userName"/><br/>
+		<input type="submit" value="go"/>
+		</form>
+	</body>
+</html>
+

@@ -1,0 +1,30 @@
+package cm.User;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpServlet;
+import java.io.*;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.*;
+
+
+@SuppressWarnings("serial")
+public class AddAccount extends HttpServlet {
+	public void doPost(HttpServletRequest req,HttpServletResponse res) throws IllegalArgumentException,ServletException,IOException {
+		PrintWriter out = res.getWriter();
+		
+		String FirstName = req.getParameter("user_firstname");
+		String LastName = req.getParameter("user_lastname");
+		int Number = Integer.parseInt(req.getParameter("user_number"));
+		try {
+			Date selectedDate = new SimpleDateFormat("yyyy-MM-dd").parse(req.getParameter("user_dob"));
+		} catch (ParseException e) {
+			e.printStackTrace();
+		}
+		
+		
+		out.println("First Name : " + FirstName);
+		
+	}
+}
