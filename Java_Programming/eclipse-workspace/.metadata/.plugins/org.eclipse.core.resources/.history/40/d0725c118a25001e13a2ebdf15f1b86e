@@ -1,8 +1,0 @@
-package com.telusko;
-import java.io.IOException;
-import java.servlet.*;
-import java.servlet.http.HttpServletRequest;
-
-public class MyServlet extends HttpServlet{
-	
-}
