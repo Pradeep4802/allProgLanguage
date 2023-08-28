@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .container {
+    width: 50%;
+    position: relative;
+    left: 25%;
+    top: 10rem;
+  }
+  
+  .main {
+    /* position: absolute;
+      top: 10%; */
+    /* border: 2px solid black; */
+    display: grid;
+    grid-template-columns: 13% 40% 13% 10% 11% 7%;
+    grid-template-rows: 30% 70%;
+    grid-template-areas: 
+    "one two three four five six"
+    "seven eight eight four five six"
+    ;
+    height: 500px;
+    grid-gap: 5px;
+  }
+  
+  .box {
+    display: grid;
+    border: 2px solid black;
+    /* height: 100px; 
+      width: 100px; */
+  }
+
+  #box1 {
+    background-color: rgb(250, 50, 120);
+    color: white;
+    grid-area: one;
+    padding: 1rem;
+  }
+  
+  #box2 {
+    background-color: rgb(44, 229, 192);
+    color: white;
+    grid-area: two;
+    padding: 1rem;
+  }
+  #box3 {
+    background-color: rgb(27, 122, 43);
+    color: white;
+    grid-area: three;
+    padding: 1rem;
+  }
+  #box4 {
+    background-color: rgb(27, 197, 235);
+    color: aliceblue;
+    grid-area: four;
+    padding: 1rem;
+  }
+  #box5 {
+    background-color: rgb(6, 40, 79);
+    color: white;
+    grid-area: five;
+    padding: 1rem;
+  }
+  #box6 {
+    background-color: rgb(88, 237, 243);
+    color: white;
+    grid-area: six;
+    padding: 1rem;
+  }
+  #box7 {
+      background-color: rgb(238, 125, 5);
+      color: white;
+      grid-area: seven;
+      padding: 1rem;
+  }
+  #box8 {
+      background-color: rgb(237, 178, 40);
+      color: white;
+      grid-area: eight;
+      padding: 1rem;
+  }

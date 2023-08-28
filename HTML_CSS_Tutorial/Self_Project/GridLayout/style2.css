@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 50%;
+  position: relative;
+  left: 25%;
+  top: 10rem;
+}
+
+.main {
+  /* position: absolute;
+    top: 10%; */
+  /* border: 2px solid black; */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas: 
+  "one two two three"
+  "one four five six"
+  "one seven eight six"
+  ;
+  height: 500px;
+  grid-gap: 10px;
+}
+
+.box {
+  display: grid;
+  border: 2px solid black;
+  /* height: 100px; 
+    width: 100px; */
+}
+
+#box1 {
+  background-color: rgb(96, 233, 58);
+  color: white;
+  grid-area: one;
+  padding: 1rem;
+}
+
+#box2 {
+  background-color: rgb(96, 233, 58);
+  color: white;
+  grid-area: two;
+  padding: 1rem;
+}
+#box3 {
+  background-color: red;
+  color: white;
+  grid-area: three;
+  padding: 1rem;
+}
+#box4 {
+  background-color: yellow;
+  color: aliceblue;
+  grid-area: four;
+  padding: 1rem;
+}
+#box5 {
+  background-color: red;
+  color: white;
+  grid-area: five;
+  padding: 1rem;
+}
+#box6 {
+  background-color: rgb(96, 233, 58);
+  color: white;
+  grid-area: six;
+  padding: 1rem;
+}
+#box7 {
+    background-color: red;
+    color: white;
+    grid-area: seven;
+    padding: 1rem;
+}
+#box8 {
+    background-color: yellow;
+    color: white;
+    grid-area: eight;
+    padding: 1rem;
+}

@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.row {
+  /* border: 2px solid black; */
+  margin: 0 !important;
+  min-height: 100vh;
+}
+
+.col-md-8,
+.col-md-4 {
+  padding: initial !important;
+}
+
+.image-box {
+  text-align: center;
+  height: 100%;
+  background-image: url(music.jpg);
+  background-position: center;
+  background-size: cover;
+  /* width:initial; */
+}
+
+.image-box h1 {
+  color: white;
+  font-size: 80px;
+  padding-top: 200px;
+}
+
+.partner-logo {
+  display: flex;
+  justify-content: space-around;
+  /* align-items: center; */
+  bottom: 60px;
+  position: absolute;
+  width: 67%;
+}
+
+.partner-logo img {
+  width: 14%;
+  margin: 0 5%;
+}
+
+.form-container {
+  /* border-bottom: 2px solid violet; */
+  height: 100%;
+  /* padding-top: 13px; */
+}
+
+.form-container .menus {
+  /* position: relative;
+  left: 33px;
+  top: 7px; */
+  padding: 15px 20px 0;
+  border-bottom: 2px solid #c200ff;
+}
+
+.form-container .menus button {
+  border: none;
+  outline: none !important;
+  background-color: transparent;
+  margin: 0 12px;
+  padding: 0 10px 5px 10px;
+  font-size: 20px; 
+}
+
+/* .form-container .menus .login {
+    border-bottom: 3px solid #c200ff;
+} */
+
+.info {
+    /* border: 2px solid black; */
+    /* width: 55%;
+    position: relative;
+    top: 90px;
+    left: 130px; */
+    margin-top: 70px;
+    text-align: center;
+}
+
+.info h1 {
+    margin-bottom: 50px;
+    color: #c200ff;
+}
+
+.info input {
+    margin-bottom: 40px;
+    width: 50%;
+    border: none;
+    outline: none;
+    padding: 5px 0;
+    background: transparent;
+    border-bottom: 1px solid #c200ff;
+}
+
+.info button {
+    width: 50%;
+    padding: 5px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    background: #c200ff;
+    color: #fff;
+    font-weight: 600;
+}
+
+#register-tab {
+    display: none;
+}
+
+#loginbtn {
+    border-bottom: 4px solid #c200ff;
+}
+
+/* .info h1 {
+    color: violet;
+    position: relative;
+    left: 20px;
+}
+
+.inp {
+    /* border: 2px solid black; */
+    /* margin: 0 15%;
+    position: absolute;
+    top: 85%;
+} */
+
+/* .inp input {
+    border: none;
+    /* outline: none; */
+    /* margin: 10px 0;
+    width: 120%;
+    border-bottom: 2px solid violet;
+} */
+
+/* .col-md-4 .info button {
+    position: absolute;
+    top: 180px;
+    left: 50px;
+    border: 2px solid violet;
+    border-radius: 20px;
+    padding: 4px 70px;
+    background-color: violet;
+    color: white;
+} */ */ */
