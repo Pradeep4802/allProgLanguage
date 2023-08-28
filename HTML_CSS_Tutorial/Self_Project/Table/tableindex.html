@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <table
+      style="border: 1px solid black; border-collapse: collapse"
+      id="myTable"
+    >
+      <thead style="border: 1px solid black">
+        <tr style="border: 1px solid black">
+          <th style="border: 1px solid black">Name</th>
+          <th style="border: 1px solid black">Age</th>
+          <th style="border: 1px solid black">Country</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Table rows will be added dynamically using JavaScript -->
+      </tbody>
+    </table>
+  </body>
+  <script>
+    const table = document.getElementById("myTable");
+
+    function updateTable(data) {
+      const tbody = table.querySelector("tbody");
+    //   tbody.innerHTML = ""; // Clear existing rows
+
+      data.forEach((row) => {
+        const newRow = document.createElement("tr");
+        newRow.innerHTML = `<td style="border: 1px solid black;">${row.name}</td><td style="border: 1px solid black;">${row.age}</td><td style="border: 1px solid black;"style="border: 1px solid black;">${row.country}</td>`;
+        tbody.appendChild(newRow);
+      });
+    }
+
+    // Example data
+    const exampleData = [
+      { name: "Alice", age: 25, country: "USA" },
+      { name: "Bob", age: 30, country: "Canada" },
+      { name: "Eve", age: 22, country: "UK" },
+      { name: "Pradeep", age: 23, country: "India" },
+    ];
+
+    updateTable(exampleData); // Call this function to populate the table
+  </script>
+</html>
