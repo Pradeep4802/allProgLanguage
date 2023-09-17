@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  /* border: 2px solid black; */
+  background-image: url(SkySpace.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: scroll;
+  height: 40rem;
+}
+
+.container .header {
+  /* border: 2px solid black; */
+  position: relative;
+  top: 10px;
+  width: 70%;
+  margin: 0 15%;
+}
+
+.container .header .nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container .header .nav h2 {
+  font-size: 45px;
+  font-family: "Kaushan Script", cursive;
+  color: white;
+}
+
+.container .header .nav ul {
+  display: flex;
+  list-style: none;
+  margin: 23px 70px;
+  width: 33%;
+  justify-content: space-around;
+  margin-left: auto;
+}
+
+.container .header .nav ul li {
+  font-size: 1.4rem;
+  font-family: "Eczar", serif;
+  padding-bottom: 10px;
+}
+
+.container .header .nav ul li a {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 auto;
+  text-align: left;
+  text-decoration: none;
+  color: white;
+}
+
+.container .header .nav button {
+  margin: 10px 0;
+  padding: 10px 25px;
+  font-size: 22px;
+  border-radius: 10px;
+  border: 2px solid whitesmoke;
+  color: white;
+  font-weight: bold;
+  background: transparent;
+  cursor: pointer;
+  transition: 0.8s;
+}
+
+.container .header .nav button:hover {
+  border: 2px solid whitesmoke;
+  background: whitesmoke;
+  color: black;
+}
+
+.container .header .mid-head {
+  /* border: 2px solid black; */
+  height: 25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .header .mid-head .big {
+  font-size: 5rem;
+  font-weight: 900;
+  color: white;
+}
+
+.container .header .mid-head .small {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+  color: white;
+  font-family: "Patrick Hand", cursive;
+  word-spacing: 4px;
+  font-size: 1.2rem;
+  position: relative;
+}
+
+.container .header .mid-head .btn {
+  /* height: 5rem; */
+  position: absolute;
+  top: 80%;
+  left: 40%;
+}
+
+.container .header .mid-head .btn button {
+  padding: 1.1rem 1.5rem;
+  background: rgb(10, 255, 12);
+  color: white;
+  font-weight: bold;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  transition: 0.8s;
+}
+
+.container .header .mid-head .btn button:hover {
+  background-color: green;
+}
+
+section {
+  display: flex;
+  padding: 120px 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.h2-container {
+  width: 50%;
+  margin-bottom: 90px;
+  position: relative;
+  top: 10%;
+}
+
+.h2 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-family: "Libre Franklin", sans-serif;
+  color: #b3b3b3;
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 300;
+  width: 61%;
+}
+
+.text-span {
+  color: #000;
+  font-weight: 800;
+}

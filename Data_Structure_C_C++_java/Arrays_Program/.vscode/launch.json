@@ -2,6 +2,13 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "type": "java",
+      "name": "mujd",
+      "request": "launch",
+      "mainClass": "mujd",
+      "projectName": "Arrays_Program_3df07c3f"
+    },
+    {
       "name": "C/C++ Runner: Debug Session",
       "type": "cppdbg",
       "request": "launch",
