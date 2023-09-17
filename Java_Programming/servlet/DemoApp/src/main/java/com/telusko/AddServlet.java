@@ -15,35 +15,36 @@ import javax.servlet.http.HttpSession;
 @WebServlet("/add")
 public class AddServlet extends HttpServlet{
 	public void doGet(HttpServletRequest req, HttpServletResponse res) throws IOException, ServletException {
-		
+
 		int i = Integer.parseInt(req.getParameter("num1"));
 		int j = Integer.parseInt(req.getParameter("num2"));
-		
+
 		int k = i + j;
-		
-		Cookie cookie = new Cookie("k", k + "");
-		res.addCookie(cookie);
-		
+
+		//		Cookie cookie = new Cookie("k", k + "");
+		//		res.addCookie(cookie);
+
 		// HttpSession interface working implementation
-		
-//		HttpSession session = req.getSession();
-//		session.setAttribute("k", k);
-		
-		/*
-		 * PrintWriter out = res.getWriter();
-		 * 
-		 * out.println("result is " + k);
-		 */
-		
+
+		//		HttpSession session = req.getSession();
+		//		session.setAttribute("k", k);
+
+
+		PrintWriter out = res.getWriter();
+		out.println("<html><body bgcolor='cyan'>");
+		out.println("result is " + k);
+		out.println("</body></html>");
+
+
 		// To call servlet from servlet their are two method like requestDispatcher and redirect
-		
-//		req.setAttribute("k", k);
-		
-		res.sendRedirect("sq");
-		
-//		RequestDispatcher rd = req.getRequestDispatcher("/sq");
-//		rd.forward(req, res);
-		
+
+		//		req.setAttribute("k", k);
+
+		//		res.sendRedirect("sq");
+
+		//		RequestDispatcher rd = req.getRequestDispatcher("/sq");
+		//		rd.forward(req, res);
+
 	}
-	
+
 }
