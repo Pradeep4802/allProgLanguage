@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Program</title>
+  </head>
+  <body>
+    Enter the number: <input type="text" name="user" id="user" />
+    <button class="btn" value="abc">submit</button>
+    <p id="para">Hello World </p>
+    <script>
+    //   let num = document.querySelector("#user");
+      //   console.log(num);
+      //   document.querySelector(".btn").addEventListener("click", () => {
+      //     document.querySelector("#para").innerText = "Number is " + num;
+      //     num.innerText = document.querySelector("#user").getAttribute("value");
+      //   });
+      //   document.forms(num);
+
+      let btn = document.querySelector(".btn");
+      let arr = [1, 2, 3, 4, 5, 6];
+      btn.addEventListener("click", (event) => {
+        let inpvalue = document.querySelector("#user").value;
+        let newArr = arr.filter((elem) => elem % inpvalue == 0);
+        let useful = document.querySelector("#para");
+
+        // for (let i = 0;i < newArr.length; i++) {
+        // }
+        useful.innerHTML = "<h1>Input is : " + newArr + "</h1>";
+
+        console.log(newArr);
+
+        let e = event.target;
+        console.log(`Event is : ${e}`);
+        console.log("Event is : "+e);
+        console.log(e.value);
+      });
+    </script>
+  </body>
+</html>

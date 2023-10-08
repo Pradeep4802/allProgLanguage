@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Serach List</title>
+  </head>
+  <body>
+    <form>
+      <input type="text" id="searchInput" placeholder="Search..." />
+      <select id="searchResults"></select>
+    </form>
+    <script>
+      const searchInput = document.getElementById("searchInput");
+      const searchResults = document.getElementById("searchResults");
+      const data = [
+        "Apple",
+        "Banana",
+        "Cherry",
+        "Date",
+        "Fig",
+        "Grape",
+        "Lemon",
+        "Orange",
+        "Peach",
+      ];
+
+      searchInput.addEventListener("input", function () {
+        const searchText = searchInput.value.toLowerCase();
+        const filteredData = data.filter((item) =>
+          item.toLowerCase().includes(searchText)
+        );
+        updateDropdown(filteredData);
+      });
+      
+      function updateDropdown(results) {
+        searchResults.innerHTML = ""; // Clear previous results
+        results.forEach((result) => {
+          const option = document.createElement("option");
+          option.text = result;
+          searchResults.appendChild(option);
+        });
+      }
+    </script>
+  </body>
+</html>
