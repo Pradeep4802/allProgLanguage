@@ -66,7 +66,7 @@ function Obj() {
 
 function getAllMethods(obj) {
     let my = console.log(typeof obj);
-    console.log(my);
+    console.log(myindex.html);
   return Object.keys(obj)
     .filter((key) => typeof obj[key] === "function")
     .map((key) => obj[key]);

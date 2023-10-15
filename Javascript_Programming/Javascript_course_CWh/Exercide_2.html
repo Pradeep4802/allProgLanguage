@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Snake, Water and Gun Game</h1>
+
+    <script>
+
+        let user = prompt("Enter S,W or G : ");
+        let cpu = Math.floor(Math.random() * 3);
+        let game = ["S","W","G"][cpu];
+
+        const match = (game, user)=> {
+            if(game === user) {
+                return 0;
+            }
+            else if(game == "S" && user === "W") {
+                return "game";
+            }
+            else if(game == "G" && user === "W") {
+                return "user";
+            }
+            else if(game == "G" && user === "S") {
+                return "game";
+            }
+        }
+
+        // let S = "Snake";
+        // let W = "Water";
+        // let G = "Gun";
+        // let input = [];
+        // for(let i = 0; i < 5 ;i++) {
+        //     input.push(prompt("Enter the Letter : "));
+        // }
+
+    </script>
+</body>
+</html>

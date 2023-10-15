@@ -1,4 +1,43 @@
-console.log(Array);
+console.time("p1");
+// let time1 = performance.now();
+let obj1 = {
+    Name : "pradeep",
+    Age : 21,
+    College : "MCC"
+}
+
+
+console.table(obj1);
+
+console.warn("Warn : Hey please dont drink soda");
+console.error("Error : I am terrorist");
+console.assert("Assert : I am assert" != false);
+console.info("Info : I am info");
+
+console.table(console);
+// let time2 = performance.now();
+// console.log("Total Time is : "+(time2-time1));
+console.timeEnd("p1");
+
+console.time("forloop");
+for (let i = 0; i < 5; i++) {
+    console.log(255);
+    
+}
+console.timeEnd("forloop");
+console.time("whileloop");
+let i = 0;
+while(i < 5) {
+    console.log(i++);
+}
+console.timeEnd("whileloop");
+
+
+
+
+
+
+
 
 let num = [45,87,90,847,-23,-2342,98383,983,6473733,34443,3223,45345];
 let f = Infinity;
@@ -7,7 +46,7 @@ for(let i = 0; i < num.length ; i++) {
     f = Math.min(f,num[i]);
 }
 
-console.log(f);
+// console.log(f);
 
 let evaluate = new Function();
 let obj = new Object();
@@ -16,28 +55,35 @@ obj.city = "Navi Mumbai";
 evaluate.Name = "Suraj";
 evaluate.Age = 23;
 
-console.log(evaluate);
-console.log(obj);
+// console.log(evaluate);
+// console.log(obj);
 
 function myFunc(Name,Age = 43) {
     return [Name,Age];
 }
 
 let calc = myFunc("Pradeep",23,"Pal");
-console.log(calc);
+// console.log(calc);
 
-function car(mycar){
+function car(mycar,brr){
     mycar.model = "B34";
+    brr[3] = "Brahma";
 }
 
-let mycar = {
+const mycar = {
     model : "A21",
     Color : "Blue",
     Origin : "Australia"
 }
 
-console.log(mycar.model);  // mycar model
+const brr = ["Bholenath","Krishna","Vishnu","Arjuna","Karna"];
 
+// console.log(mycar.model);  // mycar model
+// console.log(brr[3]);
+car(mycar,brr);
+
+// console.log(mycar.model);
+// console.log(brr[3]);
 
 
 

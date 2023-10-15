@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Validation</title>
+  </head>
+  <body>
+    <form action="" method="post">
+      <label>Enter the Username : </label
+      ><input type="text" id="user-name" required /><br />
+      <label>Enter the Password : </label
+      ><input type="password" id="user-pass" /><br />
+      <label>Enter the Email : </label
+      ><input type="email" id="user-email" /><br />
+      <label>Enter the Contact : </label
+      ><input type="text" id="user-contact" /><br />
+      <input type="submit" id="submit" value="submit" />
+    </form>
+    <script>
+      document.querySelector("#submit").addEventListener("click", validate);
+
+      function validate() {
+        let Name = document.querySelector("#user-name");
+        if (Name.value === "") {
+          alert("Please enter value");
+        }
+        let Password = document.querySelector("#user-pass");
+        // Password.setAttribute("required")
+        let Email = document.querySelector("#user-email");
+        // Email.setAttribute("required")
+        let Contact = document.querySelector("#user-contact");
+        // Contact.setAttribute("required")
+        // console.log(Name.getAttribute);
+        document.write(
+          `Name : ${Name.value} <br> Password : ${Password.value} <br> Email : ${Email.value} <br> Contact : ${Contact.value}`
+        );
+      }
+    </script>
+  </body>
+</html>
